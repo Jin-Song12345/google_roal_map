@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sms_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="32234545"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sms_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="this is the message for sms"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/sms_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sms_content"
+
+            android:text="street city status country postal code"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sms_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018.12.31 10:30"
+
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

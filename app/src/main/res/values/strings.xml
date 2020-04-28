@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">SMS Receiver Place</string>
+    <string name="title_activity_maps" translatable="false">Current Place Details</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="option_get_place1">Show Map</string>
+    <string name="return_main">Return</string>
+    <string name="pick_place">Choose a place</string>
+    <string name="option_set_phone">Setting</string>
+    <string name="settings">Setting</string>
+    <string name="phone_numbers">Phone Number</string>
+    <string name="login_hint">Please, Enter Phone Number.</string>
+    <string name="login_confirm">OK</string>
+    <string name="confirm_et_phone">Please, Enter Phone Number.</string>
+    <string name="load_txt_auth">Requesting certification.</string>
+    <string name="txt_success_auth">The login was successful.</string>
+    <string name="txt_fail_auth">Login failed</string>
+</resources>

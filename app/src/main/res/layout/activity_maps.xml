@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.kci.activity.MapsActivityCurrentPlace">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:gravity="top"
+            android:background="@drawable/round_shap"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arrow" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center|center_horizontal">
+                <TextView
+                    android:id="@+id/txtDis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal"
+
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="18sp"
+                    android:text="Liptovska cesta 2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgTarget"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right|top|center_vertical"
+            android:gravity="top"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/target_pos" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="10dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id = "@+id/imgLeftArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <ImageView
+                android:id = "@+id/imgRightArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/right_arrow" />
+
+        </LinearLayout>
+
+    </fragment>
+
+
+</LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
